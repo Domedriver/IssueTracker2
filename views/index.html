@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freeCodeCamp Issue Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">    
+    <link rel="stylesheet" href="./public/style.css">
+  </head>
+  <body>
+    <div id="main-container">    
+      <h1>freeCodeCamp Issue Tracker</h1>
+      <div id="box-container">     
+        <div id="submit-box" class="box">     
+          <h3>Submit an Issue</h3>
+          <form id="project-issue-form">
+            <div id="project-name-container">
+              <p>Select existing project or start a new one</p>
+              <select required name="project"></select><br>
+            </div>
+            <input type="text" name="issue_title" placeholder="Title of issue"><br>
+            <textarea type="text" name="issue_text" placeholder="Description of issue"></textarea><br>
+            <input type="text" name="created_by" placeholder="Created by"><br>
+            <input type="text" name="assigned_to" placeholder="Assigned to"><br>
+            <input type="text" name="status_text" placeholder="Status text"><br>
+            <input type="submit" name="submit" value="Issue Submit">      
+          </form>
+        </div>
+        <div id="update-box" class="box">     
+          <h3>Update an Issue</h3>
+          <form id="update-form">            
+            <p>Update any part of an existing issue</p>
+            <input type="text" name="_id" placeholder="ID of issue" required><br>
+            <input type="text" name="issue_title" placeholder="Title"><br>
+            <textarea type="text" name="issue_text" placeholder="Description of issue"></textarea><br>
+            <input type="text" name="created_by" placeholder="Created by"><br>
+            <input type="text" name="assigned_to" placeholder="Assigned to"><br>
+            <input type="text" name="status_text" placeholder="Status text"><br>
+            <label><input type="checkbox" name="open" value="false">Check to close issue</label><br>
+            <input type="submit" name="submit" value="Update Issue">              
+        </form>
+        </div>
+        <div id="del-instr-box" class="box">               
+          <div id="del-box">
+            <h3>Delete an Issue</h3>
+            <p>Completely remove an issue</p>
+            <form id="delete-form">
+              <input type="text" name="_id" placeholder="ID of issue to be deleted"><br>
+              <input type="submit" name="submit" value="Delete Issue">
+            </form>
+          </div>
+          <div id="instr-box">
+            <h3>Instructions</h3>
+            <ul>
+              <li>
+                The fCC Issue Tracker allows users to create and update issues assigned to specific projects.                
+              </li>
+              <li>
+                To get a list of all issues related to a project, users can use the endpoint: <code>/api/issues/{project name}</code>
+              </li>
+              <li>
+                This list can be filtered by passing parameters in the query, for example: <code>/api/issues/{project name}?close=true</code>
+              </li>
+              <li>
+                Users can also view and add issues to a specific project by visiting:<br><code>/{project name}</code>
+              </li>
+            </ul>            
+          </div>   
+        </div>
+      </div>
+      <div id="json-container"></div>
+    </div>
+    <script src="./public/client.js"></script>
+  </body>  
+</html>
