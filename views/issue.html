@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>freeCodeCamp Project Issue Tracker</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styleIssue.css">       
+  </head>
+  <body>
+    <div id="fixed-headline">   
+      <div id="new-issue-container">    
+        <h1>freeCodeCamp Project Issue Tracker</h1>
+        <h2 id="project-name"></h2>
+        <div id="submit-box" class="box">
+          <h3>Submit an Issue</h3>
+          <form id="project-issue-form">
+            <div id="side-by-side">         
+              <div id="left-form" class="input-form">                      
+                <input type="text" name="issue_title" placeholder="Title of issue">          
+                <input type="text" name="created_by" placeholder="Created by">
+                <input type="text" name="assigned_to" placeholder="Assigned to">
+                <input type="text" name="status_text" placeholder="Status text">
+              </div>
+              <div id="right-form" class="input-form">         
+                <textarea type="text" name="issue_text" placeholder="Description of issue"></textarea>
+              </div>
+            </div>
+            <input type="submit" name="submit" value="Issue Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="card-box"></div>
+    <script src="./public/clientIssue.js"></script>
+  </body>
+
+</html>

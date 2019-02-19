@@ -1,0 +1,104 @@
+body {
+  font-family: 'Coiny', cursive;  
+  background-color: #4dccbd;
+  margin: 0px  
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+  text-align: center;
+}
+
+ul {
+  padding-left: 10px;
+  margin: 0px
+}
+
+li {
+  line-height: 20px;
+  text-align: justify;
+  text-justify: inter-word;  
+}
+
+input, textarea, select, option {  
+  border-radius: 5px;
+  border: 2px solid #4dccbd;
+  box-sizing: border-box;
+  font-family: 'Coiny', cursive;  
+}
+
+input, select, option, textarea, label {
+  width: 75%; 
+  margin: 5px 0px 5px 0px;  
+  background-color: #d6fff6;
+  color: #2374ab;
+}
+
+select, input {
+  height: 25px;;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+ input, textarea::placeholder-shown {
+   color: #2374ab;   
+}
+
+label > input {  
+  margin-right: 5px;
+  width: auto;   
+}
+
+label {
+  background-color: #231651;
+  color: #ff8484;
+}
+
+#main-container {  
+  box-sizing: border-box;
+  padding: 15px;
+  color: #ff8484;  
+  background-color: #231651;  
+  margin-top: 5%;  
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  width: 65%; 
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#box-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  width: 30%;
+}
+
+input[type="submit"]:hover {
+  color: #4dccbd;
+  background-color: #231651;
+  border: 2px solid #4dccbd;
+}
+
+input[type="submit"] {  
+  font-size: 18px;
+  color: #231651;
+  background-color: #4dccbd;
+  border-radius: 5px;
+  border: none;  
+  width: 140px;
+  height: 33px
+}
+
+code {  
+  color: #2374ab;
+  background-color: #d6fff6;
+}
+  
